@@ -19,21 +19,16 @@
         .btn-buy { background-color: var(--primary); color: white; padding: 0.75rem 2rem; border: none; font-size: 1.1rem; font-weight: bold; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; transition: 0.3s; }
         .btn-buy:hover { background-color: #16a34a; transform: translateY(-2px); }
         .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
-        
-        /* Menggunakan grid agar pas 1.000 slot tanpa merusak tampilan */
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
-        
         .card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 2px 4px rgba(0,0,0,0.02); position: relative; min-height: 160px; }
         .card.active { border-top: 4px solid var(--primary); }
         .card.available { border: 2px dashed #cbd5e1; background: #f1f5f9; text-align: center; justify-content: center; cursor: pointer; }
         .card.available:hover { border-color: var(--primary); background: #f0fdf4; transform: scale(1.02); transition: 0.2s; }
-        
         .slot-number { position: absolute; top: 8px; left: 8px; font-size: 0.7rem; color: #94a3b8; font-weight: bold; }
         .tag { position: absolute; top: 8px; right: 8px; background: #e0f2fe; color: #0369a1; font-size: 0.7rem; font-weight: bold; padding: 0.1rem 0.4rem; border-radius: 4px; }
         .card h3 { font-size: 1rem; margin-top: 0.5rem; margin-bottom: 0.3rem; color: #1e293b; }
         .card p { font-size: 0.8rem; color: #64748b; margin-bottom: 1rem; }
         .card .link-btn { background: #0f172a; color: white; text-align: center; padding: 0.4rem; border-radius: 4px; text-decoration: none; font-size: 0.8rem; font-weight: 500; }
-        
         .available-text { color: #64748b; font-weight: 600; font-size: 0.9rem; }
         .price-tag { color: var(--primary); font-size: 0.8rem; font-weight: bold; margin-top: 0.2rem; }
         footer { text-align: center; padding: 3rem 1rem; color: #64748b; font-size: 0.9rem; margin-top: 4rem; border-top: 1px solid var(--border); }
@@ -44,14 +39,11 @@
     <header>
         <h1>The \$1 Ad Board</h1>
         <p>1,000 advertising slots available. Promote your link globally for just \$1/month.</p>
-        <a href="mailto:your-email@://example.com a \$1 Ad Slot" class="btn-buy">Get Your Slot for \$1</a>
+        <a href="mailto:ajilaksana29@://gmail.com a \$1 Ad Slot" class="btn-buy">Get Your Slot for \$1</a>
     </header>
 
     <div class="container">
-        <!-- Kontainer utama untuk menampung slot iklan -->
         <div class="grid" id="ad-grid">
-            
-            <!-- Contoh Iklan Aktif #1 -->
             <div class="card active">
                 <span class="slot-number">#1</span>
                 <span class="tag">\$1 Ad</span>
@@ -60,7 +52,6 @@
                 <a href="https://example.com" target="_blank" class="link-btn">Visit Website</a>
             </div>
 
-            <!-- Contoh Iklan Aktif #2 -->
             <div class="card active">
                 <span class="slot-number">#2</span>
                 <span class="tag">\$1 Ad</span>
@@ -68,41 +59,30 @@
                 <p>Create captions in less than 5 seconds easily.</p>
                 <a href="https://example.com" target="_blank" class="link-btn">Try For Free</a>
             </div>
-
-            <!-- 998 Slot sisanya akan dibuat otomatis oleh JavaScript di bawah ini -->
-
         </div>
     </div>
 
     <footer>
         <p>&copy; 2026 The \$1 Ad Board. All rights reserved.</p>
-        <p>Want to advertise? Contact us at: <strong>your-email@example.com</strong></p>
+        <p>Want to advertise? Contact us at: <strong>ajilaksana29@gmail.com</strong></p>
     </footer>
 
-    <!-- SKRIP OTOMATIS GENERATE 1000 SLOT -->
     <script>
         const grid = document.getElementById('ad-grid');
         const totalSlots = 1000;
-        const startFrom = 3; // Karena slot 1 dan 2 sudah diisi contoh di atas
+        const startFrom = 3;
 
         for (let i = startFrom; i <= totalSlots; i++) {
-            // Membuat elemen kotak iklan baru
             const card = document.createElement('div');
             card.className = 'card available';
-            
-            // Mengarahkan klik langsung ke email Anda dengan nomor slot otomatis
             card.onclick = function() {
-                location.href = `mailto:your-email@://example.com about Ad Slot #${i}`;
+                location.href = `mailto:ajilaksana29@://gmail.com about Ad Slot #${i}`;
             };
-
-            // Memasukkan konten teks ke dalam kotak
             card.innerHTML = `
                 <span class="slot-number">#${i}</span>
                 <div class="available-text">+ Available</div>
                 <div class="price-tag">Slot #${i} for $1</div>
             `;
-
-            // Memasukkan kotak ke dalam grid website
             grid.appendChild(card);
         }
     </script>
