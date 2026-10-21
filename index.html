@@ -44,20 +44,78 @@
 
     <div class="container">
         <div class="grid" id="ad-grid">
+            <!-- Slot #1 s.d #12 diisi contoh iklan bervariasi -->
             <div class="card active">
-                <span class="slot-number">#1</span>
-                <span class="tag">\$1 Ad</span>
+                <span class="slot-number">#1</span><span class="tag">\$1 Ad</span>
                 <h3>Notion Templates</h3>
-                <p>Boost your productivity with custom workspaces.</p>
+                <p>Boost your daily productivity with minimal workspaces.</p>
                 <a href="https://example.com" target="_blank" class="link-btn">Visit Website</a>
             </div>
-
             <div class="card active">
-                <span class="slot-number">#2</span>
-                <span class="tag">\$1 Ad</span>
+                <span class="slot-number">#2</span><span class="tag">\$1 Ad</span>
                 <h3>AI Tool Generator</h3>
-                <p>Create captions in less than 5 seconds easily.</p>
+                <p>Create social media captions in less than 5 seconds.</p>
                 <a href="https://example.com" target="_blank" class="link-btn">Try For Free</a>
+            </div>
+            <div class="card active">
+                <span class="slot-number">#3</span><span class="tag">\$1 Ad</span>
+                <h3>Indie Dev Blog</h3>
+                <p>Stories about building digital SaaS micro-products alone.</p>
+                <a href="https://example.com" target="_blank" class="link-btn">Read Blog</a>
+            </div>
+            <div class="card active">
+                <span class="slot-number">#4</span><span class="tag">\$1 Ad</span>
+                <h3>Crypto Tracker</h3>
+                <p>Real-time minimal clean dashboard for your crypto assets.</p>
+                <a href="https://example.com" target="_blank" class="link-btn">Open App</a>
+            </div>
+            <div class="card active">
+                <span class="slot-number">#5</span><span class="tag">\$1 Ad</span>
+                <h3>Design Assets</h3>
+                <p>Free custom high-quality Figma 3D icons for ui/ux designers.</p>
+                <a href="https://example.com" target="_blank" class="link-btn">Download</a>
+            </div>
+            <div class="card active">
+                <span class="slot-number">#6</span><span class="tag">\$1 Ad</span>
+                <h3>Newsletter Hub</h3>
+                <p>Weekly curated list of the best AI marketing tech news.</p>
+                <a href="https://example.com" target="_blank" class="link-btn">Subscribe</a>
+            </div>
+            <div class="card active">
+                <span class="slot-number">#7</span><span class="tag">\$1 Ad</span>
+                <h3>Remote Jobs Co</h3>
+                <p>Handpicked non-tech remote job openings across the globe.</p>
+                <a href="https://example.com" target="_blank" class="link-btn">Find Jobs</a>
+            </div>
+            <div class="card active">
+                <span class="slot-number">#8</span><span class="tag">\$1 Ad</span>
+                <h3>Saas Boilerplate</h3>
+                <p>Launch your tech startup in days using Next.js boilerplates.</p>
+                <a href="https://example.com" target="_blank" class="link-btn">Get Code</a>
+            </div>
+            <div class="card active">
+                <span class="slot-number">#9</span><span class="tag">\$1 Ad</span>
+                <h3>CSS UI Library</h3>
+                <p>A collection of beautiful copy-paste animated web buttons.</p>
+                <a href="https://example.com" target="_blank" class="link-btn">View UI</a>
+            </div>
+            <div class="card active">
+                <span class="slot-number">#10</span><span class="tag">\$1 Ad</span>
+                <h3>SEO Checklist</h3>
+                <p>A comprehensive master list to rank your site on Google fast.</p>
+                <a href="https://example.com" target="_blank" class="link-btn">Access Sheet</a>
+            </div>
+            <div class="card active">
+                <span class="slot-number">#11</span><span class="tag">\$1 Ad</span>
+                <h3>Podcast Studio</h3>
+                <p>Listen to weekly tech founder failure stories and lessons.</p>
+                <a href="https://example.com" target="_blank" class="link-btn">Listen Now</a>
+            </div>
+            <div class="card active">
+                <span class="slot-number">#12</span><span class="tag">\$1 Ad</span>
+                <h3>NoCode Flow</h3>
+                <p>Automate your tedious daily business tasks without any code.</p>
+                <a href="https://example.com" target="_blank" class="link-btn">Start Flow</a>
             </div>
         </div>
     </div>
@@ -70,7 +128,7 @@
     <script>
         const grid = document.getElementById('ad-grid');
         const totalSlots = 1000;
-        const startFrom = 3;
+        const startFrom = 13; // Otomatis menggenerate slot kosong mulai dari nomor 13
 
         for (let i = startFrom; i <= totalSlots; i++) {
             const card = document.createElement('div');
@@ -86,6 +144,5 @@
             grid.appendChild(card);
         }
     </script>
-
 </body>
 </html>
